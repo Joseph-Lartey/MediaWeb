@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <div class="main" id="home">
@@ -21,7 +23,7 @@
                 <li><a href="../view/home.php">HOME</a></li>
                     <li><a href="../view/about.php">ABOUT</a></li>
                     <li><a href="../view/home.php">SERVICE</a></li>
-                    <li><a href="../view/news.php">NEWS</a></li>
+                    <li><a href="../view/news.php" style="color: #00AEED;">NEWS</a></li>
                     <li><a href="../view/contact.php">CONTACT</a></li>
                 </ul>
             </div>
@@ -31,7 +33,7 @@
     <!-- News Article Section -->
     <div class="news-container">
         <div class="news-main-content">
-            <a href="#" class="back-link">< Back to all news</a>
+            <a href="../view/news.php" class="back-link">< Back to all news</a>
             <!-- <img src="../assets/16.jpg" alt="News Image" class="news-image"> -->
             <h1 class="news-title">Local Community Garden Flourishes Amid Urban Development</h1>
             <p class="news-date">August 20, 2024</p>
@@ -51,10 +53,11 @@
                 <li><a href="#">01 Feb 2023 - Last News Article</a></li>
             </ul>
             <div class="news-social">
-                <a href="#"><img src="../assets/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="../assets/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="../assets/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+
         </div>
     </div>
 </body>

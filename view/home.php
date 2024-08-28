@@ -18,7 +18,7 @@
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#home" style="color: #00AEED;">HOME</a></li>
                     <li><a href="../view/about.php">ABOUT</a></li>
                     <li><a href="#services">SERVICE</a></li>
                     <li><a href="../view/news.php">NEWS</a></li>
@@ -32,8 +32,8 @@
             <p class="par">
             Lartey Studios is most focused on turning your<br> events into timeless memories through<br> exceptional videography and photography.
             </p>
-            <button class="cn"><a href="#">Join US</a></button>
-            <button class="cn1"><a href="#">Learn More</a></button>
+            <button class="cn"><a href="../view/contact.php">Join US</a></button>
+            <button class="cn1"><a href="../view/about.php">Learn More</a></button>
 
         </div>
     </div>
@@ -61,6 +61,54 @@
         </div>
     </section>
 
+<!-- Modals Section -->
+    <div id="videography-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class = "heading" style="background-color:#00AEED;">
+                <h2>Videography</h2>
+            </div>
+            <img src="../assets/7.jpg" alt="Videography" class="modal-image">
+            <p>At Lartey Studios, we provide exceptional videography services tailored to capture the essence of your events. Our team of skilled videographers utilizes state-of-the-art equipment to ensure that every moment is recorded with precision and creativity. Whether it's a wedding, corporate event, or any special occasion, we strive to deliver high-quality videos that meet and exceed our clients' expectations. Our videography service is not just about capturing footage; it's about telling a story that reflects the unique vibe of your event.</p>
+        </div>
+    </div>
+
+    <div id="photography-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class = "heading" style="background-color:#00AEED;">
+                <h2>Photography</h2>
+            </div>
+            
+            <img src="../assets/8.jpg" alt="Photography" class="modal-image">
+            <p>Our photography services are designed to immortalize your cherished moments. With a keen eye for detail, our photographers capture the emotions and atmosphere of your event in stunning images. We offer a variety of photography styles to suit your needs, whether it's traditional, candid, or artistic photography.</p>
+        </div>
+    </div>
+
+    <div id="editing-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class = "heading" style="background-color:#00AEED;">
+                <h2>Editing</h2>
+            </div>
+            <img src="../assets/6.jpg" alt="Editing" class="modal-image">
+            <p>Our editing services bring your photos and videos to life. We use advanced software to enhance the quality, add special effects, and create polished final products that are ready to be shared with the world. Whether you need video editing, photo retouching, or post-production services, we have the expertise to make your content shine.</p>
+        </div>
+    </div>
+
+    <div id="streaming-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class = "heading" style="background-color:#00AEED;">
+                <h2>Event Live Streaming</h2>
+            </div>
+            <img src="../assets/9.jpg" alt="Event Live Streaming" class="modal-image">
+            <p>Our event live streaming services allow you to share your special moments with a global audience in real-time. We use the latest technology to ensure high-quality streaming, providing a seamless experience for viewers, no matter where they are located.</p>
+        </div>
+    </div>
+
+
+
 
     <footer>
         <div class="container">
@@ -76,5 +124,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/home.js"></script>
 </body>
 </html>

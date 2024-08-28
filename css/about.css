@@ -138,16 +138,30 @@ ul li a:hover {
     justify-content: center;
     /* flex-wrap: wrap; */
 }
-
 .team-member {
+    position: relative;
     width: 200px;
     margin: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .team-member img {
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+
+.team-member:hover {
+    background-color: #00AEED; /* Change this color to whatever you prefer */
+}
+
+.team-member:hover img {
+    transform: scale(1.1); /* Optional: Slight zoom effect on hover */
+}
+
 
 .team-member h3 {
     font-size: 1.2rem;
@@ -181,4 +195,81 @@ footer h4 {
 
 footer p {
     font-size: 16px;
+}
+
+/* CSS for the Team Members Modals */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+    max-height: 80%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.modal p {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.modal-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    margin: 0 10px;
+    color: #00AEED;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    color: #555;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
 }

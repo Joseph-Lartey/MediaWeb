@@ -141,10 +141,19 @@ ul li a:hover {
 }
 
 .news-social {
-    margin-top: 20px;
+    display: flex;
+    gap: 30px; /* Adjust the spacing between icons to match your original margin-right */
+    margin-top: 20px; /* Maintain your original top margin */
 }
 
 .news-social a {
-    margin-right: 10px;
+    margin-right: 0; /* Remove margin-right since we're using gap for spacing */
     display: inline-block;
+    color: #000; /* Icon color */
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease-in-out;
+}
+
+.news-social a:hover {
+    color: #00AEED; /* Change icon color on hover */
 }

@@ -160,38 +160,38 @@ ul li a:hover {
 }
 
 .services-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 20px; /* Space between the grid items */
+    justify-items: center;
 }
 
 .service {
-    background-color: #ccc; /* Dark background color for cards */
+    background-color: #fff; /* Dark background color for cards */
     color: #fff;
-    margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    flex-basis: 22%;
     text-align: center;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 .service img {
-    width: 100%;
-    height: auto;
+
+    width: 60%; /* Adjust the percentage to control the image size */
+    height: auto; /* Maintain the aspect ratio */
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
+
 .service h3 {
     margin-top: 15px;
-    color: #fff; /* Keeping the text white */
+    color: #080606; /* Keeping the text white */
     font-weight: 600;
 }
 
 .service:hover {
     transform: translateY(-10px); /* Makes the card pop up */
-    background-color: #444; /* Slightly lighter dark grey background on hover */
+    background-color:#00AEED; /* Slightly lighter dark grey background on hover */
 }
 
 footer {
@@ -216,4 +216,65 @@ footer h4 {
 
 footer p {
     font-size: 16px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 50%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Translate to ensure centering */
+    width: 60%; /* Set width to 60% of the viewport width */
+    height: auto; /* Allow content to determine height */
+    max-height: 80%; /* Limit height to 80% of viewport */
+    overflow-y: auto; /* Enable vertical scroll if content overflows */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-height: 100%; /* Ensure content doesn't overflow the modal */
+    overflow-y: auto; /* Scroll if content overflows vertically */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    word-wrap: break-word; /* Handle long words */
+    word-break: break-word; /* Break long words at the edge of the container */
+    overflow-wrap: break-word; /* Ensure text wraps within the container */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 50%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.modal p {
+    text-align: left; /* Align text to the left for readability */
+    margin-bottom: 20px;
+    line-height: 1.6; /* Adjust line height for readability */
 }

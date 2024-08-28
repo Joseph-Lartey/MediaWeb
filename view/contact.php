@@ -10,15 +10,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+        <div class="main" id="home">
+                <div class="navbar">
+                    <div class="logo-container">
+                        <img src="../assets/logo3.png" alt="Lartey Studios Logo" class="logo-img">
+                        <h2 class="logo-text">Lartey Studios</h2>
+                    </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="../view/home.php">HOME</a></li>
+                        <li><a href="../view/about.php" >ABOUT</a></li>                    <li><a href="../view/home.php">SERVICE</a></li>
+                        <li><a href="../view/news.php">NEWS</a></li>
+                        <li><a href="../view/contact.php" style="color: #00AEED;">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+
+
+
     <div class="contact-container">
         <!-- Contact Information Section -->
         <div class="contact-info">
             <div class="logo-container">
                 <img src="../assets/logo3.png" alt="Lartey Studios Logo" class="logo-img">
             </div>
-            <h2 class="contact-title">Let's Talk</h2>
+            <h2 class="contact-title">Request Our Services</h2>
             <p class="contact-desc">
-                Have some big ideas or a brand to develop and need help? Then reach out; we'd love to hear about your project and provide help.
+            Capture your moments with us. Whether you need stunning photography, cinematic videography, or professional editing, our team is ready to bring your project to life. Reach out today and let's create something unforgettable.
             </p>
             <div class="contact-details">
                 <p><strong>Email</strong></p>

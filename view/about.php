@@ -20,8 +20,7 @@
             <div class="menu">
                 <ul>
                     <li><a href="../view/home.php">HOME</a></li>
-                    <li><a href="../view/about.php">ABOUT</a></li>
-                    <li><a href="../view/home.php">SERVICE</a></li>
+                    <li><a href="../view/about.php" style="color: #00AEED;">ABOUT</a></li>                    <li><a href="../view/home.php">SERVICE</a></li>
                     <li><a href="../view/news.php">NEWS</a></li>
                     <li><a href="../view/contact.php">CONTACT</a></li>
                 </ul>
@@ -52,28 +51,87 @@
     <div class="team">
         <h2>MEET THE TEAM</h2>
         <div class="team-members">
-            <div class="team-member">
+            <div class="team-member" data-member="tim-cook">
                 <img src="../assets/11.jpg" alt="Tim Cook">
                 <h3>Tim Cook</h3>
                 <p>Project Manager</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-member="john-doe">
                 <img src="../assets/12.jpg" alt="John Doe">
                 <h3>John Doe</h3>
                 <p>Financial Manager</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-member="lady-forest">
                 <img src="../assets/13.jpg" alt="Lady Forest">
                 <h3>Lady Forest</h3>
                 <p>Director</p>
             </div>
-            <div class="team-member">
+            <div class="team-member" data-member="amin-gul">
                 <img src="../assets/14.jpg" alt="Amin Gul">
                 <h3>Amin Gul</h3>
                 <p>CEO</p>
             </div>
+
         </div>
     </div>
+
+
+
+    
+<!-- Modals for Team Members -->
+<div id="tim-cook-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tim Cook - Project Manager</h2>
+            <img src="../assets/11.jpg" alt="Tim Cook" class="modal-image">
+            <p>Tim Cook is the Project Manager at Lartey Studios. He oversees all projects to ensure they are completed on time and to the highest standard.</p>
+            <div class="socials">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="john-doe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>John Doe - Financial Manager</h2>
+            <img src="../assets/12.jpg" alt="John Doe" class="modal-image">
+            <p>John Doe manages the financial aspects of Lartey Studios, ensuring financial stability and growth.</p>
+            <div class="socials">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="lady-forest-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Lady Forest - Director</h2>
+            <img src="../assets/13.jpg" alt="Lady Forest" class="modal-image">
+            <p>Lady Forest directs all creative efforts at Lartey Studios, bringing a unique vision to each project.</p>
+            <div class="socials">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="amin-gul-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Amin Gul - CEO</h2>
+            <img src="../assets/14.jpg" alt="Amin Gul" class="modal-image">
+            <p>Amin Gul is the CEO of Lartey Studios, leading the company with a passion for innovation and excellence.</p>
+            <div class="socials">
+                <a href="#" class="social-link">LinkedIn</a>
+                <a href="#" class="social-link">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+    
 
     <footer>
         <div class="container">
@@ -89,6 +147,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/about.js"></script>
 
     
 </body>

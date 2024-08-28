@@ -21,7 +21,7 @@
                 <li><a href="../view/home.php">HOME</a></li>
                     <li><a href="../view/about.php">ABOUT</a></li>
                     <li><a href="../view/home.php">SERVICE</a></li>
-                    <li><a href="../view/news.php">NEWS</a></li>
+                    <li><a href="../view/news.php" style="color: #00AEED;">NEWS</a></li>
                     <li><a href="../view/contact.php">CONTACT</a></li>
                 </ul>
             </div>
@@ -35,9 +35,74 @@
 
     <hr class="thick-black-line">
 
-    
+
+
 
     <div class="news-container">
+    <a href="../view/details.php" class="news-item">
+        <div class="news-number">1</div>
+        <div class="news-image">
+            <img src="../assets/16.jpg" alt="News Image">
+        </div>
+        <div class="news-details">
+            <p>02 FEB 2023</p>
+            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+        </div>
+    </a>
+
+    <a href="../view/details.php" class="news-item">
+        <div class="news-number">2</div>
+        <div class="news-image">
+            <img src="../assets/16.jpg" alt="News Image">
+        </div>
+        <div class="news-details">
+            <p>02 FEB 2023</p>
+            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+        </div>
+    </a>
+
+    <a href="../view/details.php" class="news-item">
+        <div class="news-number">3</div>
+        <div class="news-image">
+            <img src="../assets/16.jpg" alt="News Image">
+        </div>
+        <div class="news-details">
+            <p>02 FEB 2023</p>
+            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+        </div>
+    </a>
+
+    <a href="../view/details.php" class="news-item">
+        <div class="news-number">4</div>
+        <div class="news-image">
+            <img src="../assets/16.jpg" alt="News Image">
+        </div>
+        <div class="news-details">
+            <p>02 FEB 2023</p>
+            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+        </div>
+    </a>
+
+    <a href="../view/details.php" class="news-item">
+        <div class="news-number">5</div>
+        <div class="news-image">
+            <img src="../assets/16.jpg" alt="News Image">
+        </div>
+        <div class="news-details">
+            <p>02 FEB 2023</p>
+            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+        </div>
+    </a>
+
+    
+
+    
+</div>
+
+
+    
+
+    <!-- <div class="news-container">
         <div class="news-item">
             <div class="news-number">1</div>
             <div class="news-image">
@@ -89,6 +154,6 @@
                 <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
