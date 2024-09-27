@@ -3,7 +3,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "Vcnm1H&w";
 $databasename = "lartey_studios_db";
 
 
