@@ -35,7 +35,6 @@ CREATE TABLE users (
     email VARCHAR(100) NOT NULL UNIQUE,
     phone_number VARCHAR(25), 
     password_hash VARCHAR(255) NOT NULL,
-    phone_number VARCHAR(15),
     profile_image_url VARCHAR(255),
     gender ENUM('male', 'female'),
     DOB DATE,
