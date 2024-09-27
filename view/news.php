@@ -39,65 +39,88 @@
 
 
     <div class="news-container">
-    <a href="../view/details.php" class="news-item">
-        <div class="news-number">1</div>
-        <div class="news-image">
-            <img src="../assets/16.jpg" alt="News Image">
-        </div>
-        <div class="news-details">
-            <p>02 FEB 2023</p>
-            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
-        </div>
-    </a>
+        <?php include '../action/get_news.php'; ?>
+        <?php foreach ($news_items as $index => $news): ?>
+            <a href="../view/details.php?id=<?= $news['id'] ?>" class="news-item">
+                <div class="news-number"><?= $index + 1 ?></div>
+                <div class="news-image">
+                    <img src="<?= $news['news_image_url'] ?>" alt="News Image">
+                </div>
+                <div class="news-details">
+                    <p class="news-heading"><?= $news['heading'] ?></p>
+                    <p class="news-date"><?= date('d M Y', strtotime($news['news_date'])) ?></p>
+                    <p class="news-text"><?= $news['news_text'] ?></p>
+                </div>
+            </a>
+        <?php endforeach; ?>
+    </div>
 
-    <a href="../view/details.php" class="news-item">
-        <div class="news-number">2</div>
-        <div class="news-image">
-            <img src="../assets/16.jpg" alt="News Image">
-        </div>
-        <div class="news-details">
-            <p>02 FEB 2023</p>
-            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
-        </div>
-    </a>
 
-    <a href="../view/details.php" class="news-item">
-        <div class="news-number">3</div>
-        <div class="news-image">
-            <img src="../assets/16.jpg" alt="News Image">
-        </div>
-        <div class="news-details">
-            <p>02 FEB 2023</p>
-            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
-        </div>
-    </a>
+        <!-- <a href="../view/details.php" class="news-item">
+            <div class="news-number">1</div>
+            <div class="news-image">
+                <img src="../assets/16.jpg" alt="News Image">
+            </div>
+            <div class="news-details">
+                <p class="news-heading">Heading</p>
+                <p class="news-date">02 FEB 2023</p>
+                <p class="news-text">Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+            </div>
+        </a>
 
-    <a href="../view/details.php" class="news-item">
-        <div class="news-number">4</div>
-        <div class="news-image">
-            <img src="../assets/16.jpg" alt="News Image">
-        </div>
-        <div class="news-details">
-            <p>02 FEB 2023</p>
-            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
-        </div>
-    </a>
+        <a href="../view/details.php" class="news-item">
+            <div class="news-number">2</div>
+            <div class="news-image">
+                <img src="../assets/16.jpg" alt="News Image">
+            </div>
+            <div class="news-details">
+                <p class="news-heading">Heading</p>
+                <p class="news-date">02 FEB 2023</p>
+                <p class="news-text">Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+            </div>
+        </a>
 
-    <a href="../view/details.php" class="news-item">
-        <div class="news-number">5</div>
-        <div class="news-image">
-            <img src="../assets/16.jpg" alt="News Image">
-        </div>
-        <div class="news-details">
-            <p>02 FEB 2023</p>
-            <p>Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
-        </div>
-    </a>
+        <a href="../view/details.php" class="news-item">
+            <div class="news-number">3</div>
+            <div class="news-image">
+                <img src="../assets/16.jpg" alt="News Image">
+            </div>
+            <div class="news-details">
+                <p class="news-heading">Heading</p>
+                <p class="news-date">02 FEB 2023</p>
+                <p class="news-text">Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+            </div>
+        </a>
+
+        <a href="../view/details.php" class="news-item">
+            <div class="news-number">4</div>
+            <div class="news-image">
+                <img src="../assets/16.jpg" alt="News Image">
+            </div>
+            <div class="news-details">
+                <p class="news-heading">Heading</p>
+                <p class="news-date">02 FEB 2023</p>
+                <p class="news-text">Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+            </div>
+        </a>
+
+        <a href="../view/details.php" class="news-item">
+            <div class="news-number">5</div>
+            <div class="news-image">
+                <img src="../assets/16.jpg" alt="News Image">
+            </div>
+            <div class="news-details">
+                <p class="news-heading">Heading</p>
+                <p class="news-date">02 FEB 2023</p>
+                <p class="news-text">Our vision is to become a leading name in the event videography and photography industry, known for our artistry, reliability, and dedication to client satisfaction. We aspire to create lasting impressions and inspire others through the power of visual storytelling, making every event unforgettable.</p>
+            </div>
+        </a> -->
+
 
     
 
     
-</div>
+
 
 
     
